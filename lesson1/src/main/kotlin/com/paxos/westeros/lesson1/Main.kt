@@ -6,6 +6,8 @@ import java.io.File
 import javax.sound.sampled.AudioInputStream
 import javax.sound.sampled.Clip
 
+val mary = LocalMaryInterface()
+
 fun main() {
     val dingDingDing = makeResourceClip("/dingdingding.wav")
     val shameShameShame = makeResourceClip("/shameShameShame.wav")
@@ -39,8 +41,6 @@ private fun makeResourceClip(resourceName : String): Clip{
     val audioInputStream = AudioSystem.getAudioInputStream(File(uri).absoluteFile)
     return makeClip(audioInputStream)
 }
-
-val mary = LocalMaryInterface()
 
 private fun makeTtsClip(textToSpeech : String): Clip{
     return makeClip(mary.generateAudio(textToSpeech))

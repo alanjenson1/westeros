@@ -24,5 +24,5 @@ repositories {
 dependencies {
     compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${extra["kotlin_version"]}")
     compile("org.jetbrains.kotlin:kotlin-stdlib:${extra["kotlin_version"]}")
-//    compile("de.dfki.mary:voice-cmu-slt-hsmm:5.2")
+    compile("de.dfki.mary:voice-cmu-slt-hsmm:5.2")
 }
