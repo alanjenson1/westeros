@@ -1,0 +1,14 @@
+.gradle/
+build/
+target/
+out/
+FixService*.log
+src/test/resources/create_schema.cql
+*.tgz
+*.ipr
+*.iws
+*.iml
+.idea/
+.DS_Store
+securities-contracts/node_modules/
+log/
