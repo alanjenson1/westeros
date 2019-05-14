@@ -9,3 +9,8 @@ buildscript {
         classpath(kotlin("gradle-plugin", "${extra["kotlin_version"]}"))
     }
 }
+
+plugins {
+    idea
+    java
+}
